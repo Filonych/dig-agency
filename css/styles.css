@@ -1,3 +1,7 @@
+html {
+    font-family: 'Sintony', sans-serif;
+}
+
 * {
 	padding: 0px;
 	margin: 0px;
@@ -90,11 +94,6 @@ legend {
 	display: block;
 }
 
-html {
-    font-family: 'Sintony', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -106,15 +105,115 @@ html {
     display: inline-flex;
     gap: 50px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .hero {
     height: 650px;
     display: flex;
+    width: 100%;
     flex-grow: 1;
 }
 
-.hero-text-wrap {
+.hero-text {
     background-color: #FFC700;
+    max-width: 650px;
+    max-height: 100%;
+    font-family: 'Sintony';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 182px 96px 181px 163px;
+}
 
+.hero-text>h1 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+}
+
+.services {
+    width: 1166px;
+    height: 784px;
+    margin-top: 120px;
+}
+
+.services-title {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: right;
+}
+
+.services-title > span {
+    color: #FFC700;
+}
+
+.services-item {
+    display: inline-block;
+    height: 267px;
+    width: 482px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 40px 44px 60px 94px;
+    position: relative;
+    margin-left: 61px;
+}
+
+.services-item-right {
+    display: inline-block;
+    height: 267px;
+    width: 482px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 40px 88px 60px 50px;
+    position: relative;
+    margin-left: 61px;
+}
+
+.service-name {
+    font-family: 'Source Sans Pro';
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 20px;
+}
+
+.service-text {
+    font-family: 'Sintony';
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.yellow-circle {
+    width: 122px;
+    height: 122px;
+    background-color: #FFC700;
+    border-radius: 61px;
+    position: absolute;
+    top: 40px;
+    right: 421px;
+}
+
+.service-logo {
+    position: absolute;
+    top: 29px;
+    left: 29px;
+}
+
+.yellow-circle-right {
+    width: 122px;
+    height: 122px;
+    background-color: #FFC700;
+    border-radius: 61px;
+    position: absolute;
+    top: 40px;
+    left: 421px;
 }
