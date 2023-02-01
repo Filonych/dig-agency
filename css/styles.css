@@ -157,7 +157,7 @@ legend {
     color: #FFC700;
 }
 
-.services-item {
+.services-left-column>.services-item {
     display: inline-block;
     height: 267px;
     width: 482px;
@@ -168,7 +168,7 @@ legend {
     margin-left: 61px;
 }
 
-.services-item-right {
+.services-right-column>.services-item {
     display: inline-block;
     height: 267px;
     width: 482px;
@@ -177,6 +177,7 @@ legend {
     padding: 40px 88px 60px 50px;
     position: relative;
     margin-left: 61px;
+    margin-top: 80px;
 }
 
 .service-name {
@@ -216,4 +217,22 @@ legend {
     position: absolute;
     top: 40px;
     left: 421px;
+}
+
+.services-both-columns {
+    display: flex;
+}
+
+.services-left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-left-column>.services-item {
+    margin-bottom: 80px;
 }
