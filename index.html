@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Agency</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="./img/Logo.svg" alt="logo">
+            <a href="#"><img src="./img/Logo.svg" alt="logo"></a>
         </div>
         <ul class="nav">
             <li><a href="#">Our service</a></li>
@@ -22,50 +23,58 @@
             <li><a href="#">Contact us</a></li>
         </ul>
     </header>
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Grow your brand through digital</h1>
-            <p>If the path is beautiful, let us not ask where it leads. my religion is very simple. my religion is kindness. each of us has within our power the ability to disrupt</p>
-            <button type="button">Learn more</button>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Grow your brand through digital</h1>
+                <p>If the path is beautiful, let us not ask where it leads. my religion is very simple. my religion is kindness. each of us has within our power the ability to disrupt</p>
+                <button type="button">Learn more</button>
+            </div>
+            <div class="hero-image">
+                <img src="./img/Hero Image.svg">
+            </div>
+            
         </div>
-        <img class='hero-image' src="./img/Hero Image.svg">
-    </div>
+    </section>
     <div class="services">
         <h2 class="services-title">We’re always ready<br>for <span>challenges</span></h2>
         <div class="services-both-columns">
-        <div class="services-left-column">
-        <div class="services-item">
-            <h2 class="service-name">Web Development</h2>
-            <p class="service-text">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
-            <div class="yellow-circle">
-                <img class="service-logo" src="./img/monitor.svg">
+            <div class="services-left-column">
+                <div class="services-item">
+                    <h2 class="service-name">Web Development</h2>
+                    <p class="service-text">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+                    <div class="yellow-circle">
+                        <img class="service-logo" src="./img/monitor.svg">
+                    </div>
+                </div>
+                <div class="services-item">
+                    <h2 class="service-name">Digital Marketing</h2>
+                    <p class="service-text">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+                    <div class="yellow-circle">
+                        <img class="service-logo" src="./img/chat.svg">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="services-item">
-            <h2 class="service-name">Digital Marketing</h2>
-            <p class="service-text">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
-            <div class="yellow-circle">
-                <img class="service-logo" src="./img/chat.svg">
+            <div class="services-right-column">
+                <div class="services-item">
+                    <h2 class="service-name">UI/UX Design</h2>
+                    <p class="service-text">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+                    <div class="yellow-circle-right">
+                        <img class="service-logo" src="./img/book.svg">
+                    </div>
+                </div>
+                <div class="services-item">
+                    <h2 class="service-name">Brand Design</h2>
+                    <p class="service-text">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
+                    <div class="yellow-circle-right">
+                        <img class="service-logo" src="./img/email.svg">
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
-        <div class="services-right-column">
-        <div class="services-item">
-            <h2 class="service-name">UI/UX Design</h2>
-            <p class="service-text">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
-            <div class="yellow-circle-right">
-                <img class="service-logo" src="./img/book.svg">
-            </div>
-        </div>
-        <div class="services-item">
-            <h2 class="service-name">Brand Design</h2>
-            <p class="service-text">My first thought about art, as a child, was that the artist brings something into the world that didn't exist before, and that he does it without destroying something else</p>
-            <div class="yellow-circle-right">
-                <img class="service-logo" src="./img/email.svg">
-            </div>
-        </div>
-        </div>
         </div>
     </div>
+    <div class="projects">
+    </div>
+
     </body>
 </html>
