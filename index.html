@@ -132,6 +132,7 @@
                 <h2 class="proj__subtitle">Website development for Digital Company</h2>
                 <p class="proj__desc">My first thought about art, as a child, was that the artist brings something into
                     the world that didn't exist before, and that he does it without destroying something else</p>
+                    <div class="proj-bg-circle"></div>
             </div>
             <div class="proj__dots">
                 <div class="proj__dots_item proj__dots_item_active"></div>
@@ -144,7 +145,10 @@
             </div>
             <img class="proj__img" src="./img/proj1.png" alt="proj1">
             <img class="proj__img" src="./img/proj2.png" alt="proj2">
-            <img class="proj__img" src="./img/proj3.png" alt="proj3">
+            <div class="proj-img3-wrap">
+                <img class="proj__img" src="./img/proj3.png" alt="proj3">
+                <div class="proj-bg-square"></div>
+            </div>
         </div>
     </div>
     <div class="video-wrap">
@@ -252,7 +256,7 @@
             <p class="quote-jobtitle">UI Designer</p>
         </div>
     </div>
-    <div class="clients-wrap">
+    <div class="grey-bg">
         <div class="clients">
             <img src="./img/logo_1.png" alt="news.com" class="clients-logo">
             <img src="./img/logo_2.png" alt="business-insider" class="clients-logo">
@@ -260,21 +264,64 @@
             <img src="./img/logo_4.png" alt="midweek" class="clients-logo">
             <img src="./img/logo_5.png" alt="wired" class="clients-logo">
         </div>
-    </div>
-    <div class="contact-wrap">
-        <div class="contact">
-            <div class="start">
-                <p class="start-title">Start a new project!</p>
-                <p class="start-desc">If the path is beautiful, let us not ask where it leads. my religion is very simple. my religion is kindness.</p>
+            <div class="contact">
+                <div class="start">
+                    <p class="start-title">Start a new project!</p>
+                    <p class="start-desc">If the path is beautiful, let us not ask where it leads. my religion is very simple. my religion is kindness.</p>
+                </div>
+                <form class="form">
+                    <input type="text" class="input input-name" placeholder="Your full name">
+                    <input type="email" class="input input-email" placeholder="Your e-mail address">
+                    <textarea  class="input text" name="text" cols="30" rows="10" placeholder="Drop us a message here…"></textarea>
+                    <button type="submit" class="send">send now</button>
+                </form>
+                <div class="contact-square-bg"></div>
             </div>
-            <form class="form">
-                <input type="text" class="input input-name" placeholder="Your full name">
-                <input type="email" class="input input-email" placeholder="Your e-mail address">
-                <textarea  class="text" name="text" cols="30" rows="10" placeholder="Drop us a message here…"></textarea>
-                <button type="submit" class="send">send now</button>
-            </form>
         </div>
-    </div>    
+    </div>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="footer-contact">
+                <a href="#"><img src="./img/footer-logo.png" alt="logo"></a>
+                <p class="footer-tags">Funding freemium long tail hypotheses first mover advantage assets ownership niche market startup investor.</p> 
+                <div class="footer-contact-wrap">
+                    <a class="f-envelope href="mailto:agensi@mail.com"><img src="./img/f-envelope.png" alt="envelope"></a>
+                    <a href="mailto:agensi@mail.com">agensi@mail.com</a>
+                </div>           
+                <div class="footer-contact-wrap">
+                    <a class="f-phone" href="tel:+ 1234567890"><img src="./img/f-phone.png" alt="phone"></a>
+                    <a href="tel:+ 1234567890">+ 12 3456 7890</a>
+                </div>            
+            </div>
+            <div class="footer-services">
+                <ul class="footer-nav">
+                    <li class="footer-title"><h2 class="footer-title">Services</h2></li>
+                    <li><a href="#" class="footer-list">Digital Marketing</a></li>
+                    <li class="footer-list">Branding</li>
+                    <li class="footer-list">Market Promotion</li>
+                    <li class="footer-list">Digital Campaign</li>
+                </ul>            
+            </div>
+            <div class="footer-aboutus">
+                <ul>
+                    <li class="footer-title"><h2 class="footer-title">About Us</h2></li>
+                    <li class="footer-list">Milestone</li>
+                    <li class="footer-list">Check Our Pricing Plan</li>
+                    <li class="footer-list">Expert Team</li>
+                    <li class="footer-list">Our Exciting News</li>
+                </ul>
+            </div>
+            <div class="address">
+                <h2 class="footer-title">Address</h2>
+                <p class="footer-address">123 Lorem Ipsum Street Jakarta, Indonesia</p>
+                <a href="#"><img class="footer-social" src="./img/Facebook.png" alt="facebook"></a>
+                <a href="#"><img class="footer-social" src="./img/Google.png" alt="google"></a>
+                <a href="#"><img class="footer-social" src="./img/Twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+        
+    </footer>
+        
     
 
 </body>
