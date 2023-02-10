@@ -116,10 +116,46 @@ body {
   font-family: "Source Sans Pro";
   font-weight: 900;
   font-size: 13px;
-  line-height: 1.23;
   letter-spacing: 0.541667px;
   text-transform: uppercase;
   list-style: none;
+}
+
+.menu-mobile {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.menu-mobile-line1 {
+background-color: #000;
+width: 30px;
+height: 4px;
+position: absolute;
+border-radius: 2px;
+
+
+}
+
+.menu-mobile-line2 {
+    background-color: #000;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 7px;
+    border-radius: 2px;
+
+}
+
+    .menu-mobile-line3 {
+        background-color: #000;
+        width: 30px;
+        height: 4px;
+        position: absolute;
+        top: 15px;
+        border-radius: 2px;
+
 }
 
 .hero-container {
@@ -137,32 +173,34 @@ body {
 
 .hero-text {
   background-color: #ffc700;
-  max-width: 721px;
-  max-height: 100%;
-  font-family: "Sintony";
-  font-weight: 400;
-  font-size: 15px;
-  height: 0px;
-  padding-bottom: 45.07%;
+
+  height: auto;
   width: 50%;
-  padding-left: 158px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 721px;
+  padding-right: 96px;
+  padding-left: 163px;
 }
 
-.hero-text > h1 {
+.hero-text-wrap {
+  width: 462px;
+}
+
+.hero-text-title {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 900;
   font-size: 60px;
   line-height: 1;
   margin-bottom: 36px;
-  padding-top: 182px;
-  /* padding-right: 15px; */
 }
 
-.hero-text > p {
-  padding-right: 96px;
-
+.hero-text-desc {
+  font-size: 15px;
   line-height: 1.6;
+  padding-right: 14px;
 }
 
 .hero-text__btn {
@@ -269,8 +307,8 @@ body {
   justify-content: center;
   gap: 30px;
   position: absolute;
-  left: 62px;
-  bottom: 85px;
+  left: -5px;
+  top: 598px;
 }
 
 .proj__dots_item {
@@ -873,6 +911,7 @@ a.blog-readmore-link:visited {
   padding-left: 50px;
   padding-right: 50px;
   max-width: 449px;
+  position: relative;
 }
 
 .start-title {
@@ -1042,13 +1081,12 @@ a.footer-list:visited {
 
 @media (max-width: 1330px) {
   .hero-text {
-    padding-left: calc(15px + 8vw);
+    padding-right: 80px;
+    padding-left: 115px;
   }
-  .hero-text > h1 {
-    font-size: 50px;
+  .hero-text-title {
+    font-size: 47px;
     margin-bottom: 20px;
-    padding-right: 28px;
-    padding-top: calc(20px + 10vw);
   }
 
   .services-grid-item {
@@ -1105,6 +1143,7 @@ a.footer-list:visited {
   }
   .proj__dots {
     left: -5px;
+    top: 485px;
   }
   .video-wrap {
     min-height: 300px;
@@ -1172,9 +1211,13 @@ a.footer-list:visited {
 }
 
 @media (max-width: 1050px) {
-  .hero-text > h1 {
+  .hero-text {
+    padding-right: 40px;
+    padding-left: 50px;
+  }
+
+  .hero-text-title {
     font-size: 43px;
-    padding-top: calc(20px + 7vw);
   }
   .services-grid {
     grid-template-columns: repeat(1, auto);
@@ -1246,8 +1289,9 @@ a.footer-list:visited {
     margin-bottom: 40px;
   }
   .proj__dots {
-    left: 96px;
-    top: -1813px;
+    left: 161px;
+    top: 462px;
+    flex-direction: row;
   }
 
   .proj-bg-circle {
@@ -1313,9 +1357,8 @@ a.footer-list:visited {
 }
 
 @media (max-width: 950px) {
-  .hero-text > h1 {
+  .hero-text-title {
     font-size: 37px;
-    padding-top: calc(20px + 6vw);
     margin-bottom: 10px;
   }
   .video-wrap {
@@ -1340,6 +1383,7 @@ a.footer-list:visited {
     padding-top: 61px;
 
     padding-bottom: 30px;
+    padding-left: 46px;
   }
 
   .input-name {
@@ -1349,9 +1393,8 @@ a.footer-list:visited {
   .input-email {
     margin-bottom: 35px;
   }
-
-  .contact-square-bg {
-    left: 136px;
+  .input {
+    width: 385px;
   }
 }
 
@@ -1363,13 +1406,13 @@ a.footer-list:visited {
     font-size: 11px;
   }
 
-  .hero-text > h1 {
+  .hero-text-title {
     font-size: 27px;
   }
 
-  .hero-text > p {
+  .hero-text-desc {
     font-size: 13px;
-    line-height: 1.3;
+    line-height: 1.4;
   }
 
   .milestone__item-number {
@@ -1393,11 +1436,21 @@ a.footer-list:visited {
 
   .blog-wrap {
     flex-wrap: wrap;
-    gap: 110px;
+    gap: 50px;
   }
 
   .blog-title {
     padding-left: 67px;
+  }
+
+  .news {
+    flex-basis: 100%;
+    align-items: center;
+  }
+
+  .blog-main {
+    flex-basis: 100%;
+    max-width: 638px;
   }
 
   .clients {
@@ -1439,37 +1492,214 @@ a.footer-list:visited {
 }
 
 @media (max-width: 780px) {
-    .team {
-        grid-template-columns: repeat(2, min-content);
-        grid-template-rows: repeat(3, auto);
-    }
+  .team {
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(3, auto);
+  }
 
-    .team-card {
-        grid-column: 1 / span 2;
-    }
+  .team-card {
+    grid-column: 1 / span 2;
+  }
 
-    .team-img:nth-of-type(1) {
-        grid-row: 2 / 3;
-    }
+  .team-img:nth-of-type(1) {
+    grid-row: 2 / 3;
+  }
 
-    .team-img:nth-of-type(2) {
-        grid-row: 2 / 3;
-    }
+  .team-img:nth-of-type(2) {
+    grid-row: 2 / 3;
+  }
 
-    .team-img:nth-of-type(3) {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
+  .team-img:nth-of-type(3) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 
-    .team-img:nth-of-type(4) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
+  .team-img:nth-of-type(4) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 
-    .team-title {
-       
-        margin-bottom: 13px;}
-
-
+  .team-title {
+    margin-bottom: 13px;
+  }
 }
 
+@media (max-width: 700px) {
+  .nav {
+    gap: 30px;
+
+    font-size: 11px;
+  }
+
+  .header {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .hero-text-title {
+    font-size: 20px;
+  }
+
+  .hero-text {
+  }
+
+  .hero-text-desc {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .hero-text__btn {
+    width: 126px;
+    height: 30px;
+    padding-top: 6px;
+    font-size: 10px;
+    letter-spacing: 2.2px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .milestone__item-number {
+    margin-bottom: 4px;
+    font-size: 33px;
+  }
+
+  .milestone__item-desc {
+    font-size: 12px;
+  }
+
+  .milestone__item {
+    min-height: 120px;
+    padding-top: 22px;
+  }
+  .milestone__item_yellow {
+    height: 150px;
+    padding-top: 40px;
+  }
+
+  .team-title,
+  .services-grid-title,
+  .proj__title,
+  .blog-title {
+    font-size: 29px;
+  }
+
+  .proj__subtitle {
+    font-size: 25px;
+  }
+
+  .proj {
+    margin-bottom: 83px;
+  }
+
+ 
+
+  .news-main-title {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .team-title {
+    align-self: center;
+  }
+
+  .team-wrap {
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 580px){
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+
+    .hero {
+       
+      
+        margin-bottom: 78px;
+        padding: 0 15px;
+
+    }
+
+
+    .hero-container {
+        flex-direction: column-reverse;
+        align-items: center;}
+
+        .hero-text {
+            width: 90vw;
+        padding-top: 30px;
+    padding-bottom: 30px;}
+
+            .hero-image {
+                width: 90vw;}
+
+
+    .service-name {
+        font-size: 25px;
+        margin-bottom: 5px;
+        line-height: 1.2;}
+
+        .service-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .yellow-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: absolute;
+            left: -50px;}
+            .yellow-circle-right {
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                position: absolute;
+                left: -50px;}
+                .service-logo {
+                    top: calc(50% - 28px);
+                    left: calc(50% - 28px);
+                    width: 56px;}
+
+                    .services-grid-item {
+                        width: 272px;
+                        height: 300px;
+                        margin-left: 50px;}
+
+                        div.services-grid-item:nth-of-type(-n+2) {
+                            margin-left: 50px;
+                            padding-top: 40px;}
+                       
+
+                        div.services-grid-item:nth-of-type(n + 3) {
+                            padding-top: 40px;
+                            padding-left: 81px;
+                        }
+
+                        .input {
+                            width: 300px;
+                        }
+
+                        .form {
+                            
+                            padding-left: 30px;
+                            padding-right: 30px;
+                        }
+
+                        .start {
+                            width: 360px;
+                            padding: 38px;
+                        }
+
+                        .start-title {
+                            font-size: 33px;}
+
+                            
+}
