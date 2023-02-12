@@ -12,24 +12,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sintony&family=Source+Sans+Pro:wght@900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="logo">
             <a href="#"><img src="./img/Logo.svg" alt="logo"></a>
         </div>
-        <ul class="nav">
+        <ul class="nav" id="myLinks">
             <li><a href="#">Our service</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact us</a></li>
         </ul>
-        <div class="menu-mobile">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <div class="menu-mobile-line1"></div>
             <div class="menu-mobile-line2"></div>
             <div class="menu-mobile-line3"></div>
+        </a>
         </div>
+    </header> -->
+    
+    
+    
+    
+    
+    
+    
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="./img/Logo.svg" alt="logo"></a>
+        </div>
+        <div class="nav" id="myTopnav">
+            <a href="#">Our service</a>
+            <a href="#">About us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact us</a>
+        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        
+
+
+        
     </header>
        <section class="hero">
         <div class="hero-container">
@@ -37,8 +64,7 @@
                 <div class="hero-text-wrap">
                     <h1 class="hero-text-title">Grow your brand through digital</h1>
                     <p class="hero-text-desc">If the path is beautiful, let us not ask where it leads. my religion is
-                        very simple. my religion is
-                        kindness. each of us has within our power the ability to disrupt</p>
+                        very simple. my religion is kindness. each of us has within our power the ability to disrupt</p>
                     <a class="hero-text__btn" href="#">Learn more</a>
                 </div>
             </div>
@@ -49,15 +75,25 @@
         <div class="hero-container">
             <div class="hero-text">
                 <div class="hero-text-wrap">
-                    <h1 class="hero-text-title">Grow your brand through digital</h1>
-                    <p class="hero-text-desc">If the path is beautiful, let us not ask where it leads. my religion is
-                        very simple. my religion is
-                        kindness. each of us has within our power the ability to disrupt</p>
+                    <h1 class="hero-text-title">Lorem ipsum dolor sit amet</h1>
+                    <p class="hero-text-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium</p>
                     <a class="hero-text__btn" href="#">Learn more</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img class="hero-imgx2" src="./img/Hero-imgx2.png">
+                <img class="hero-imgx2" src="./img/hero-imgslide2.jpg">
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-text">
+                <div class="hero-text-wrap">
+                    <h1 class="hero-text-title">The quick, brown fox jumps</h1>
+                    <p class="hero-text-desc">DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick</p>
+                    <a class="hero-text__btn" href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img class="hero-imgx2" src="./img/hero-imgslide3.jpg">
             </div>
         </div>
         <div class="prev-wrap" onclick="plusSlides(-1)">
@@ -324,6 +360,7 @@
         </div>
     </footer>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/mobile-menu.js" ></script>
 </body>
 
 </html>
