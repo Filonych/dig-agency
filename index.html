@@ -8,6 +8,7 @@
     <title>Digital Agency</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sintony&family=Source+Sans+Pro:wght@900&display=swap"
@@ -16,30 +17,6 @@
 </head>
 
 <body>
-    <!-- <header class="header">
-        <div class="logo">
-            <a href="#"><img src="./img/Logo.svg" alt="logo"></a>
-        </div>
-        <ul class="nav" id="myLinks">
-            <li><a href="#">Our service</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <div class="menu-mobile-line1"></div>
-            <div class="menu-mobile-line2"></div>
-            <div class="menu-mobile-line3"></div>
-        </a>
-        </div>
-    </header> -->
-    
-    
-    
-    
-    
-    
-    
     <header class="header">
         <div class="logo">
             <a href="#"><img src="./img/Logo.svg" alt="logo"></a>
@@ -50,15 +27,11 @@
             <a href="#">Blog</a>
             <a href="#">Contact us</a>
         </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        
-
-
-        
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
-       <section class="hero">
+    <section class="hero">
         <div class="hero-container">
             <div class="hero-text">
                 <div class="hero-text-wrap">
@@ -76,7 +49,9 @@
             <div class="hero-text">
                 <div class="hero-text-wrap">
                     <h1 class="hero-text-title">Lorem ipsum dolor sit amet</h1>
-                    <p class="hero-text-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium</p>
+                    <p class="hero-text-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium</p>
                     <a class="hero-text__btn" href="#">Learn more</a>
                 </div>
             </div>
@@ -88,7 +63,8 @@
             <div class="hero-text">
                 <div class="hero-text-wrap">
                     <h1 class="hero-text-title">The quick, brown fox jumps</h1>
-                    <p class="hero-text-desc">DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick</p>
+                    <p class="hero-text-desc">DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
+                        Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick</p>
                     <a class="hero-text__btn" href="#">Learn more</a>
                 </div>
             </div>
@@ -104,9 +80,9 @@
             <a class="next"><img class="sc-right" src="./img/hero-cemicircle-right.png" alt=""></a>
             <img class="hero-arrow-right" src="./img/hero-arrow-right.png" alt="">
         </div>
-        
+
     </section>
-        <br>        
+    <br>
     <div class="services-grid">
         <h2 class="services-grid-title">We’re always ready<br>for <span>challenges</span></h2>
         <div class="services-grid-item">
@@ -146,31 +122,92 @@
             </div>
         </div>
     </div>
-    <div class="proj-wrap">
-        <div class="proj">
+    <div class="proj-wrap-cont">
+        <div class="proj-bg-square"></div>
+        <div class="proj-wrap">            
             <h1 class="proj__title">Our recent <span>projects</span></h1>
             <hr class="proj__line">
-            <h2 class="proj__subtitle">Website development for Digital Company</h2>
-            <p class="proj__desc">My first thought about art, as a child, was that the artist brings something into
-                the world that didn't exist before, and that he does it without destroying something else</p>
-            <div class="proj-bg-circle"></div>
-            <div class="proj__dots">
-                <div class="proj__dots_item proj__dots_item_active"></div>
-                <div class="proj__dots_item"></div>
-                <div class="proj__dots_item"></div>
-                <div class="proj__dots_item"></div>
-                <div class="proj__dots_item"></div>
-                <div class="proj__dots_item"></div>
-                <div class="proj__dots_item"></div>
+            <div class="galery-wrap">
+                <div class="proj__dots">
+                    <div class="proj__dots_item" onclick="currentSlide(1)"></div>
+                    <div class="proj__dots_item" onclick="currentSlide(2)"></div>
+                    <div class="proj__dots_item" onclick="currentSlide(3)"></div>
+                    <div class="proj__dots_item" onclick="currentSlide(4)"></div>
+                    <div class="proj__dots_item" onclick="currentSlide(5)"></div>
+                    <div class="proj__dots_item" onclick="currentSlide(6)"></div>
+                </div>
+                <div class="proj_galery">
+                    <div class="proj">
+                        <h2 class="proj__subtitle">Website development for Digital Company</h2>
+                        <p class="proj__desc">My first thought about art, as a child, was that the artist brings something
+                            into the world that didn't exist before, and that he does it without destroying something else
+                        </p>
+                        <div class="proj-bg-circle"></div>
+                    </div>                
+                    <img class="proj__img proj__img_1" src="./img/proj1.png" alt="proj1">
+                    <img class="proj__img proj__img_2" src="./img/proj2.png" alt="proj2">
+                    <div class="proj__img proj__img_3">
+                        <img src="./img/proj3.png" alt="proj3">
+                        
+                    </div>                    
+                </div>            
+            <div class="proj_galery">
+                <div class="proj">
+                    <h2 class="proj__subtitle">Digital Marketing</h2>
+                    <p class="proj__desc">Augue molestie urna et. Hac dapibus sit non vitae ex. Non sit nisi tortor, nisi amet, sed sed imperdiet ha.</p>
+                    <div class="proj-bg-circle"></div>
+                </div>                
+                <img class="proj__img proj__img_1" src="./img/gal1.png" alt="proj1">
+                <img class="proj__img proj__img_2" src="./img/gal2.jpg" alt="proj2">
+                <img class="proj__img proj__img_3" src="./img/gal3.jpg" alt="proj3">
+            </div>
+            <div class="proj_galery">
+                <div class="proj">
+                    <h2 class="proj__subtitle">UI/UX Design</h2>
+                    <p class="proj__desc">Sed efficitur pulvinar dictumst. Luctus sed dictumst. Amet, lorem pellentesque sit cursus aenean ut. Sit pulvinar luctus nulla eget pellentesque eget odio. Ut. Lacinia mauris dapibus augue luctus et i.</p>
+                    <div class="proj-bg-circle"></div>
+                </div>                
+                <img class="proj__img proj__img_1" src="./img/gal101.jpg" alt="proj1">
+                <img class="proj__img proj__img_2" src="./img/gal102.jpg" alt="proj2">
+                <img class="proj__img proj__img_3" src="./img/gal103.jpg" alt="proj3">
+            </div>
+            <div class="proj_galery">
+                <div class="proj">
+                    <h2 class="proj__subtitle">Website development for Digital Company</h2>
+                    <p class="proj__desc">Interdum dui platea integer velit cursus imperdiet sed odio. Aenean dapibus odio. Amet, ornare sit non lacinia platea dictumst. Ut. Nunc molestie ultricies. Velit ornare habitasse nec sit non ornar.</p>
+                    <div class="proj-bg-circle"></div>
+                </div>                
+                <img class="proj__img proj__img_1" src="./img/proj1.png" alt="proj1">
+                <img class="proj__img proj__img_2" src="./img/proj2.png" alt="proj2">
+                <img class="proj__img proj__img_3" src="./img/proj3.png" alt="proj3">
+            </div>
+            <div class="proj_galery">
+                <div class="proj">
+                    <h2 class="proj__subtitle">Brand Design</h2>
+                    <p class="proj__desc">My first thought about art, as a child, was that the artist brings something
+                        into the world that didn't exist before, and that he does it without destroying something else</p>
+                    <div class="proj-bg-circle"></div>
+                </div>                
+                <img class="proj__img proj__img_1" src="./img/gal201.jpg" alt="proj1">
+                <img class="proj__img proj__img_2" src="./img/gal202.jpg" alt="proj2">
+                <img class="proj__img proj__img_3" src="./img/gal203.jpg" alt="proj3">
+            </div>
+            <div class="proj_galery">
+                <div class="proj">
+                    <h2 class="proj__subtitle">Digital Marketing</h2>
+                    <p class="proj__desc">Dictumst. Augue dictum. Amet, faucibus. Malesuada luctus dapibus venenatis sed urna accumsan sit habitasse vulputate amet interdum non sodales ipsum arcu sit tortor, integer amet adipiscing non mollis velit elit.</p>
+                    <div class="proj-bg-circle"></div>
+                </div>                
+                <img class="proj__img proj__img_1" src="./img/gal301.jpg" alt="proj1">
+                <img class="proj__img proj__img_2" src="./img/gal302.jpg" alt="proj2">
+                <img class="proj__img proj__img_3" src="./img/gal303.jpg" alt="proj3">
             </div>
         </div>
-        <div class="proj_galery">
-            <img class="proj__img proj__img_1" src="./img/proj1.png" alt="proj1">
-            <img class="proj__img proj__img_2" src="./img/proj2.png" alt="proj2">
-            <img class="proj__img proj__img_3" src="./img/proj3.png" alt="proj3">
         </div>
     </div>
+
     </div>
+
     <div class="video-wrap">
         <img src="./img/Video.png" alt="video">
         <div class="video-text">
@@ -185,22 +222,30 @@
         <div class="video-bg-square"></div>
     </div>
     <div class="milestone">
-        <div class="milestone__item">
-            <p class="milestone__item-number">124</p>
-            <p class="milestone__item-desc">Complete Projects</p>
+        <div class="milestone__item_wrap">
+            <div class="milestone__item">
+                <p class="milestone__item-number">124</p>
+                <p class="milestone__item-desc">Complete Projects</p>
+            </div>
         </div>
-        <div class="milestone__item milestone__item_yellow">
-            <p class="milestone__item-number">99%</p>
-            <p class="milestone__item-desc">Satisfied Clients</p>
-        </div>
-        <div class="milestone__item">
-            <p class="milestone__item-number">235</p>
-            <p class="milestone__item-desc">Success Campaign</p>
-        </div>
-        <div class="milestone__item">
-            <p class="milestone__item-number">2345</p>
-            <p class="milestone__item-desc">Cups of Coffee</p>
-        </div>
+        <div class="milestone__item_wrap">
+            <div class="milestone__item">
+                <p class="milestone__item-number">99%</p>
+                <p class="milestone__item-desc">Satisfied Clients</p>
+            </div>
+        </div>  
+        <div class="milestone__item_wrap">
+            <div class="milestone__item">
+                <p class="milestone__item-number">235</p>
+                <p class="milestone__item-desc">Success Campaign</p>
+            </div>
+        </div>  
+        <div class="milestone__item_wrap">
+            <div class="milestone__item">
+                <p class="milestone__item-number">2345</p>
+                <p class="milestone__item-desc">Cups of Coffee</p>
+            </div>
+        </div>  
     </div>
     <div class="blog">
         <h1 class="blog-title">From our <span>blog</span></h1>
@@ -212,12 +257,7 @@
                 <p class="news-text">The engine that gives its mysterious inner life to a work of art must be the
                     subterranean expression of a wish, working its way to the surface of a narrative. change is an easy
                     panacea. it takes character to stay in one…</p>
-                <div class="blog-readmore">
                     <a class="blog-readmore-link" href="#">read more</a>
-                    <a class="blog-readmore-arrow" href="#">
-                        <div></div>
-                    </a>
-                </div>
             </div>
             <div class="news">
                 <a href="#">
@@ -259,16 +299,16 @@
             <div class="team-card">
                 <p class="team-name">Tiara Lyodra</p>
                 <p class="team-jobtitle">Head of Product</p>
-                <a class="team-icon" href="#"><img src="./img/fb.png" alt="facebook"></a>
-                <a class="team-icon" href="#"><img src="./img/ig.png" alt="instagram"></a>
-                <a class="team-icon" href="#"><img src="./img/li.png" alt="linkedin"></a>
+                <a class="team-icon icon-fb" href="#"></a>
+                <a class="team-icon icon-ig" href="#"></a>
+                <a class="team-icon icon-in" href="#"></a>
                 <p class="team-desc">Saturday found him for the first time strolling alone through zurich, breathing in
                     the heady smell of his freedom. new adventures hid around each corner.</p>
                 <p class="team-desc">The future was again a secret. now, what was tiring had disappeared and only the
                     beauty remained.</p>
                 <div class="team-arrow">
-                    <a href="#"><img src="./img/team-arrow-left.png" alt="arrow-left"></a>
-                    <a href="#"><img src="./img/team-arrow-right.png" alt="arrow-right"></a>
+                    <a class="team-arrows icon-arrow-left" href="#"></a>
+                    <a class="team-arrows icon-arrow-right" href="#"></a>
                 </div>
             </div>
             <img class="team-img" src="./img/team-img1.png" alt="camera">
@@ -354,13 +394,14 @@
                 <h2 class="footer-title">Address</h2>
                 <p class="footer-address">123 Lorem Ipsum Street Jakarta, Indonesia</p>
                 <a href="#"><img class="footer-social" src="./img/Facebook.png" alt="facebook"></a>
-                <a href="#"><img class="footer-social" src="./img/Google.png" alt="google"></a>
-                <a href="#"><img class="footer-social" src="./img/Twitter.png" alt="twitter"></a>
+                <a href="#"><img class="footer-social" src="./img/Google.svg" alt="google"></a>
+                <a href="#"><img class="footer-social" src="./img/Twitter.svg" alt="twitter"></a>
             </div>
         </div>
     </footer>
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/mobile-menu.js" ></script>
+    <script src="./scripts/mobile-menu.js"></script>
+    <script src="./scripts/proj-slideshow.js"></script>
 </body>
 
 </html>
